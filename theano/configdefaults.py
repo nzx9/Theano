@@ -1281,7 +1281,7 @@ def default_blas_ldflags():
                 np.distutils.__config__):
             # If the old private interface is available use it as it
             # don't print information to the user.
-            blas_info = np.distutils.__config__.blas_opt_info
+            blas_info = np.distutils.__config__.blas_ilp64_opt_info
         else:
             # We do this import only here, as in some setup, if we
             # just import theano and exit, with the import at global
